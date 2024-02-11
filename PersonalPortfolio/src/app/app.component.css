@@ -1,6 +1,7 @@
 body {
   width: 100%;
   background: #262525;
+  overflow-y: overlay;
 }
 
 .dropdown {
