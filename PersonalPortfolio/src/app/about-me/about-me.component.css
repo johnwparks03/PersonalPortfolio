@@ -1,0 +1,27 @@
+.about-me-desc {
+  display: flex;
+  color: white;
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+.right-info-box {
+  padding-left: 2em;
+  width: 30%;
+}
+
+.left-info-box {
+  padding-right: 2em;
+  width: 30%;
+  text-align: end;
+}
+
+.name {
+  color: white;
+}
