@@ -5,7 +5,7 @@ import { WorkExperienceComponent } from './work-experience-component/work-experi
 import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/about-me' },
+  { path: '', redirectTo: '/about-me', pathMatch: 'full' },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
 ];
