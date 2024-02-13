@@ -1,0 +1,50 @@
+.university-honors {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections {
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 1%
+}
+
+
+.seminars {
+  display: flex;
+  margin: 0 25%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid white;
+}
+
+.seminar {
+  color: unset;
+  text-decoration: none;
+  width: 100%;
+  font-size: larger;
+}
+
+.years-in-review {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+}
+
+.year-in-review {
+
+}
+
+.year {
+
+}
+
+.review {
+
+}
