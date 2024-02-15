@@ -1,0 +1,14 @@
+.intermediate-composition {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.honors-showcase {
+  width: 65%
+}
+
+.back-link {
+  color: unset;
+}
