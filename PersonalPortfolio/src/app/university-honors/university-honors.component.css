@@ -31,6 +31,10 @@
   font-size: larger;
 }
 
+.seminar:hover{
+  font-weight: bolder;
+}
+
 .years-in-review {
     display: flex;
     flex-direction: column;

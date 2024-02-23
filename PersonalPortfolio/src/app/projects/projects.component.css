@@ -21,6 +21,10 @@ div.projects:last-child{
   text-decoration: none;
 }
 
+.github-link:hover{
+  font-weight: bold;
+}
+
 .last-repo {
   border-bottom: none;
 }

@@ -12,3 +12,7 @@
 .back-link{
   color: unset;
 }
+
+.back-link:hover{
+  font-weight: bold;
+}
