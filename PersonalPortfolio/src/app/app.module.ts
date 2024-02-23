@@ -8,6 +8,14 @@ import { MatIconModule } from '@angular/material/icon'
 import { WorkExperienceComponent } from './work-experience-component/work-experience.component';
 import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { ProjectsEffects } from './projects/store/projects.effects';
+import { HttpClientModule } from '@angular/common/http';
+import { projectsReducer } from './projects/store/projects.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { CommonModule, NgFor } from '@angular/common';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -16,13 +24,21 @@ import { AboutMeComponent } from './about-me/about-me.component';
   declarations: [
     AppComponent,
     WorkExperienceComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     MatIconModule,
-    RouterOutlet
+    RouterOutlet,
+    StoreModule.forRoot({repos: projectsReducer}, {}),
+    EffectsModule.forRoot([ProjectsEffects]),
+    HttpClientModule,
+    StoreDevtoolsModule.instrument({
+      name: 'Portfolio'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

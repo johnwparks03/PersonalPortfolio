@@ -1,1 +1,8 @@
-<p>projects works!</p>
+<div class="projects">
+    <h1 class="header"><u>Projects</u></h1>
+    <div class="project" [class.last-repo]="last" *ngFor="let repo of repos; let last=last">
+        <h3 class="repo-name">{{repo.name}}</h3>
+        <p class="repo-desc">{{repo.description}}</p>
+        <a class="github-link" href="{{repo.html_url}}" target="_blank">View Project On Github</a>
+    </div>
+</div>
