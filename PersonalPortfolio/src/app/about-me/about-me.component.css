@@ -1,6 +1,7 @@
 .about-me-desc {
   display: flex;
   color: white;
+  font-size: larger;
 }
 
 .information {
@@ -24,4 +25,13 @@
 
 .name {
   color: white;
+}
+
+.contact-info {
+  color: white;
+  text-align: center;
+}
+
+.email {
+  color: unset;
 }
