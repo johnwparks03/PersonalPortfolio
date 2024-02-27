@@ -16,6 +16,10 @@ import { projectsReducer } from './projects/store/projects.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CommonModule, NgFor } from '@angular/common';
 import { ProjectsComponent } from './projects/projects.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ObesitySeminarComponent } from './university-honors/seminars/obesity-seminar/obesity-seminar.component';
+import { UniversityHonorsComponent } from './university-honors/university-honors.component';
+import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
 
 
 
@@ -25,7 +29,10 @@ import { ProjectsComponent } from './projects/projects.component';
     AppComponent,
     WorkExperienceComponent,
     AboutMeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ObesitySeminarComponent,
+    UniversityHonorsComponent,
+    IntermediateCompositionComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HttpClientModule,
     StoreDevtoolsModule.instrument({
       name: 'Portfolio'
-    })
+    }),
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
