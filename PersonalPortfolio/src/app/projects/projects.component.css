@@ -17,14 +17,29 @@ div.projects:last-child{
 }
 
 .github-link {
-  color: unset;
+  color: black;
   text-decoration: none;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 10em;
+  background-color: white;
+  cursor: pointer;
+  margin: 2em;
 }
 
 .github-link:hover{
   font-weight: bold;
 }
 
+
 .last-repo {
   border-bottom: none;
+}
+
+.repo-desc {
+  padding: 1em;
+}
+
+.bottom-border-space{
+  height: 10px;;
 }
