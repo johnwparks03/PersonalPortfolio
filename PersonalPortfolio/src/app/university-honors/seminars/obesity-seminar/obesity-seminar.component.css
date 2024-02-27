@@ -11,8 +11,22 @@
 
 .back-link{
   color: unset;
+  padding: 2em;
 }
 
 .back-link:hover{
+  font-weight: bold;
+}
+
+.pdfLink {
+  color: black;
+  padding: 1em;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10em;
+  text-decoration: none;
+}
+
+.pdfLink:hover{
   font-weight: bold;
 }

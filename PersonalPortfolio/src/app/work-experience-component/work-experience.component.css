@@ -26,3 +26,17 @@
 .time-and-loc {
   font-style: italic;
 }
+
+.pdfLink {
+  color: black;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 10em;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pdfLink:hover{
+  font-weight: bold;
+}
