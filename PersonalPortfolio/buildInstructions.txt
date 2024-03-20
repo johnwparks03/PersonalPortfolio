@@ -1,0 +1,8 @@
+To build new changes
+1. Switch to main branch
+2. Make sure baseHref in index.html is /PersonalPortfolio/
+3. ng build --configuration production --base-href "https://johnwparks03.github.io/PersonalPortfolio/"
+4. ngh --dir dist
+
+For local development
+1. Change baseHref in index.html to /
