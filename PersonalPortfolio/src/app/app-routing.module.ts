@@ -7,6 +7,7 @@ import { UniversityHonorsComponent } from './university-honors/university-honors
 import { ObesitySeminarComponent } from './university-honors/seminars/obesity-seminar/obesity-seminar.component';
 import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about-me', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'university-honors', component: UniversityHonorsComponent },
   { path: 'global-obesity-epidemic-seminar', component: ObesitySeminarComponent },
   { path: 'intermediate-composition', component: IntermediateCompositionComponent },
-  { path: 'projects', component: ProjectsComponent}
+  { path: 'projects', component: ProjectsComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

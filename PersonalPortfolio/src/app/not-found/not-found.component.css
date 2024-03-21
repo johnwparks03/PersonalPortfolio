@@ -1,0 +1,32 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: fit-content;
+  padding: 15em 0;
+}
+
+.uhoh {
+    margin-bottom: 0;
+}
+
+.sub-text {
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+
+.back-to-home-button {
+  color: black;
+  padding: 1em;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10em;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1em
+}
+
+.back-to-home-button:hover{
+    font-weight: bolder;
+}
