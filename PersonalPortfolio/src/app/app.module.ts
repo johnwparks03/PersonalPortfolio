@@ -20,6 +20,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ObesitySeminarComponent } from './university-honors/seminars/obesity-seminar/obesity-seminar.component';
 import { UniversityHonorsComponent } from './university-honors/university-honors.component';
 import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -32,7 +33,8 @@ import { IntermediateCompositionComponent } from './university-honors/seminars/i
     ProjectsComponent,
     ObesitySeminarComponent,
     UniversityHonorsComponent,
-    IntermediateCompositionComponent
+    IntermediateCompositionComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
