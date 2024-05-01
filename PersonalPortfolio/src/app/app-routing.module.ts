@@ -8,6 +8,7 @@ import { ObesitySeminarComponent } from './university-honors/seminars/obesity-se
 import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LearningFromFailureComponent } from './university-honors/seminars/learning-from-failure/learning-from-failure/learning-from-failure.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about-me', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'university-honors', component: UniversityHonorsComponent },
   { path: 'global-obesity-epidemic-seminar', component: ObesitySeminarComponent },
   { path: 'intermediate-composition', component: IntermediateCompositionComponent },
+  { path: 'learning-from-failure', component: LearningFromFailureComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '**', component: NotFoundComponent },
 ];
