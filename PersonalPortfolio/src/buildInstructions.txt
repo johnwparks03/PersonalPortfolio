@@ -1,5 +1,6 @@
 To make a new build
 1. Set baseHref in index.html to /PersonalPortfolio/
+2. cd to \Users\parks\Repos\PersonalPortfolioProject\PersonalPortfolio\PersonalPortfolio
 2. ng build --configuration production --base-href "https://johnwparks03.github.io/PersonalPortfolio/"
 3. angular-cli-ghpages
 
