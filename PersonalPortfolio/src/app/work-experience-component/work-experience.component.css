@@ -27,6 +27,10 @@
   font-style: italic;
 }
 
+.desc{
+  text-align: center;
+}
+
 .pdfLink {
   color: black;
   text-decoration: none;
