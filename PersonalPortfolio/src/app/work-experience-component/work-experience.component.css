@@ -1,34 +1,6 @@
-.work-experience {
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.job {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20em 0 20em;
-  align-items: center;
-  margin: 1em 0 1em 0;
-}
-
-.company {
-  font-weight: 500;
-  font-size: x-large;
-}
-
-.job-title {
-  font-size: large;
-  font-weight: 400;
-}
-
-.time-and-loc {
-  font-style: italic;
-}
-
-.desc{
+.page-title {
   text-align: center;
+  color: white;
 }
 
 .pdfLink {
@@ -39,8 +11,134 @@
   border-radius: 10em;
   background-color: white;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
 }
 
-.pdfLink:hover{
+.pdfLink:hover {
   font-weight: bold;
+}
+
+.pdfLink-container {
+  text-align: center;
+  margin: 16px 0 24px 0;
+}
+
+.work-experience-timeline {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline {
+  position: relative;
+  margin: 40px 0 0 0;
+  padding: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #0078d4;
+  z-index: 0;
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  justify-content: space-around;
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+.timeline-item.left {
+  flex-direction: row;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 4px solid #0078d4;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translate(-50%, -50%);
+}
+
+.timeline-card,
+.timeline-image {
+  width: 35%;
+  background: #f4f8fb;
+  padding: 16px 16px;
+  border-radius: 8px;
+  margin: 0 24px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+.timeline-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.timeline-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.job-title {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #0078d4;
+  letter-spacing: 0.5px;
+}
+
+.job-company {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 0.2px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 800px) {
+  .timeline {
+    padding: 0;
+  }
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .timeline-card,
+  .timeline-image {
+    width: 90%;
+    margin: 12px 0;
+  }
+  .timeline-marker {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
 }
