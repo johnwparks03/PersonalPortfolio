@@ -9,6 +9,7 @@ import { IntermediateCompositionComponent } from './university-honors/seminars/i
 import { ProjectsComponent } from './projects/projects.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LearningFromFailureComponent } from './university-honors/seminars/learning-from-failure/learning-from-failure/learning-from-failure.component';
+import { StudyAbroadComponent } from './university-honors/seminars/study-abroad/study-abroad.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about-me', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'global-obesity-epidemic-seminar', component: ObesitySeminarComponent },
   { path: 'intermediate-composition', component: IntermediateCompositionComponent },
   { path: 'learning-from-failure', component: LearningFromFailureComponent },
+  { path: 'study-abroad', component: StudyAbroadComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '**', component: NotFoundComponent },
 ];

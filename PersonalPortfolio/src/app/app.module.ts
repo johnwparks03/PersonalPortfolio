@@ -21,7 +21,8 @@ import { ObesitySeminarComponent } from './university-honors/seminars/obesity-se
 import { UniversityHonorsComponent } from './university-honors/university-honors.component';
 import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
+import { LearningFromFailureComponent } from './university-honors/seminars/learning-from-failure/learning-from-failure/learning-from-failure.component';
+import { StudyAbroadComponent } from './university-honors/seminars/study-abroad/study-abroad.component';
 
 
 
@@ -33,6 +34,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ProjectsComponent,
     ObesitySeminarComponent,
     UniversityHonorsComponent,
+    LearningFromFailureComponent,
+    StudyAbroadComponent,
     IntermediateCompositionComponent,
     NotFoundComponent
   ],

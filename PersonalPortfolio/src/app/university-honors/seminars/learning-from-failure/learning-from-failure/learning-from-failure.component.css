@@ -12,6 +12,7 @@
 .back-link {
   color: unset;
   padding: 2em;
+  text-decoration: underline;
 }
 
 .back-link:hover {
