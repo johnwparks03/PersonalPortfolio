@@ -85,6 +85,12 @@
   width: 100%;
   padding: 30px 0;
   justify-content: space-around;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item.active {
+  transform: scale(1.2);
+
 }
 
 .timeline-item.right {
