@@ -111,6 +111,7 @@
   min-height: 180px;
   box-sizing: border-box;
   z-index: 3;
+  align-content: space-evenly;
 }
 
 .timeline-image {
