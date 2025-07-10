@@ -110,6 +110,7 @@
   margin: 0 24px;
   min-height: 180px;
   box-sizing: border-box;
+  z-index: 3;
 }
 
 .timeline-image {

@@ -4,7 +4,11 @@ body {
 }
 
 .dropdown {
-  width: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 6px;
+  z-index: 1000;
 }
 
 .dropdown-button {
@@ -20,14 +24,15 @@ body {
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  z-index: 1000;
+  position: relative;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background: transparent;
+  position: relative;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .dropdown-content button {
@@ -48,3 +53,8 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropdown:hover {
+  background-color: #262525;
+}
+
