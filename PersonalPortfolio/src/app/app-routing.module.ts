@@ -8,7 +8,7 @@ import { ObesitySeminarComponent } from './university-honors/seminars/obesity-se
 import { IntermediateCompositionComponent } from './university-honors/seminars/intermediate-composition/intermediate-composition.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LearningFromFailureComponent } from './university-honors/seminars/learning-from-failure/learning-from-failure/learning-from-failure.component';
+import { LearningFromFailureComponent } from './university-honors/seminars/learning-from-failure/learning-from-failure.component';
 import { StudyAbroadComponent } from './university-honors/seminars/study-abroad/study-abroad.component';
 
 const routes: Routes = [
@@ -16,8 +16,14 @@ const routes: Routes = [
   { path: 'about-me', component: AboutMeComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
   { path: 'university-honors', component: UniversityHonorsComponent },
-  { path: 'global-obesity-epidemic-seminar', component: ObesitySeminarComponent },
-  { path: 'intermediate-composition', component: IntermediateCompositionComponent },
+  {
+    path: 'global-obesity-epidemic-seminar',
+    component: ObesitySeminarComponent,
+  },
+  {
+    path: 'intermediate-composition',
+    component: IntermediateCompositionComponent,
+  },
   { path: 'learning-from-failure', component: LearningFromFailureComponent },
   { path: 'study-abroad', component: StudyAbroadComponent },
   { path: 'projects', component: ProjectsComponent },

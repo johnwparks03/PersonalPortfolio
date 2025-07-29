@@ -1,31 +1,38 @@
 <div class="study-abroad-experience">
   <h1><u>Global Research Labs - University of the Basque Country</u></h1>
   <p class="honors-showcase">
-    &nbsp;&nbsp;Before participating in the Global Research Labs program, my understanding
-    of what it meant to be a Global Citizen Scholar was shaped entirely by
-    experiences within the United States. My research co-op in Bilbao, Spain,
-    broadened that perspective significantly. I worked with the VISENS research
-    group at the University of the Basque Country, contributing to a project
-    aimed at developing an autonomous system to detect spasticity in post-stroke
-    patients. Below, you can see my final report that details my work during my
-    time in Spain This experience not only deepened my research skills but also
-    introduced me to a collaborative, cross-cultural academic environment.
-    Beyond the lab, I immersed myself in Spanish and Basque culture, navigating
-    new customs, languages, and ways of living. These experiences taught me to
-    adapt, listen actively, and approach challenges from different cultural
-    perspectives. I now see a Global Citizen Scholar as someone who embraces and
-    learns from global diversity, contributes meaningfully to international
-    communities, and applies their knowledge to create more inclusive and
-    informed solutions. This experience helped me grow both professionally and
-    personally, and reshaped how I approach each day.
+    &nbsp;&nbsp;Before participating in the Global Research Labs program, my
+    understanding of what it meant to be a Global Citizen Scholar was shaped
+    entirely by experiences within the United States. My research co-op in
+    Bilbao, Spain, broadened that perspective significantly. I worked with the
+    VISENS research group at the University of the Basque Country, contributing
+    to a project aimed at developing an autonomous system to detect spasticity
+    in post-stroke patients. Below, you can see my final report that details my
+    work during my time in Spain This experience not only deepened my research
+    skills but also introduced me to a collaborative, cross-cultural academic
+    environment. Beyond the lab, I immersed myself in Spanish and Basque
+    culture, navigating new customs, languages, and ways of living. These
+    experiences taught me to adapt, listen actively, and approach challenges
+    from different cultural perspectives. I now see a Global Citizen Scholar as
+    someone who embraces and learns from global diversity, contributes
+    meaningfully to international communities, and applies their knowledge to
+    create more inclusive and informed solutions. This experience helped me grow
+    both professionally and personally, and reshaped how I approach each day.
   </p>
-  <a
+  <!-- <a
     href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:66e464f1-0511-4168-89f0-77f9fc4a3f69"
     target="_blank"
     class="pdfLink"
   >
     View my Global Research Labs Final Report
-  </a>
+  </a> -->
+  <button
+    class="pdfLink"
+    mat-raised-button
+    (click)="openPDF('/assets/study-abroad-final-report.pdf')"
+  >
+    View my Final Report
+  </button>
   <a routerLink="/university-honors" class="back-link"
     >Back to University Honors</a
   >

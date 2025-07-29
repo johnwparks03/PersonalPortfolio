@@ -1,0 +1,8 @@
+<div class="dialog-container">
+  <button class="close-btn" mat-icon-button (click)="close()">
+    <mat-icon class="thin-icon" fontSet="material-symbols-outlined">
+      close
+    </mat-icon>
+  </button>
+  <iframe [src]="data.url | safe" width="100%" height="100%"></iframe>
+</div>
