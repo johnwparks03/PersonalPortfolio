@@ -16,6 +16,8 @@ export class PdfViewerDialogComponent {
     const test = this.document.getElementsByTagName('base')[0].href;
     const segments = test.split('/');
     const lastSegment = segments[segments.length - 1];
+    console.log('Last segment:', lastSegment);
+    console.log('Base HREF:', test);
 
     data.url = lastSegment ? lastSegment + '/' + data.url : data.url;
   }
