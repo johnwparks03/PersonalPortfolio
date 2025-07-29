@@ -14,7 +14,7 @@ export class PdfViewerDialogComponent {
     @Inject(MAT_DIALOG_DATA) public data: { url: string }
   ) {
     const test = this.document.getElementsByTagName('base')[0].href;
-    const segments = test.split('/');
+    const segments = test.split('/').filter(Boolean); // removes empty strings
     const lastSegment = segments[segments.length - 1];
     console.log('Last segment:', lastSegment);
     console.log('Base HREF:', test);
