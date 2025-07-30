@@ -21,7 +21,7 @@ export class PdfViewerDialogComponent {
     console.log('Base HREF:', test);
     console.log('Data URL:', data.url);
 
-    data.url = lastSegment ? lastSegment + '/' + data.url : data.url;
+    // data.url = lastSegment ? lastSegment + '/' + data.url : data.url;
   }
 
   close(): void {
