@@ -75,6 +75,12 @@
   width: 100%;
   padding: 30px 0;
   justify-content: space-around;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item.active {
+  transform: scale(1.2);
+
 }
 
 .timeline-item.right {
@@ -94,6 +100,8 @@
   margin: 0 24px;
   min-height: 180px;
   box-sizing: border-box;
+  z-index: 3;
+  align-content: space-evenly;
 }
 
 .timeline-image {
