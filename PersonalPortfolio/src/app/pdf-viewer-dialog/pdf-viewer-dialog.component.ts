@@ -17,7 +17,9 @@ export class PdfViewerDialogComponent {
     const segments = test.split('/').filter(Boolean); // removes empty strings
     const lastSegment = segments[segments.length - 1];
     console.log('Last segment:', lastSegment);
+    console.log('Segments:', segments);
     console.log('Base HREF:', test);
+    console.log('Data URL:', data.url);
 
     data.url = lastSegment ? lastSegment + '/' + data.url : data.url;
   }
