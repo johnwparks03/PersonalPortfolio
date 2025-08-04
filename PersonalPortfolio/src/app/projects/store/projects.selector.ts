@@ -1,10 +1,10 @@
-import { createFeatureSelector } from "@ngrx/store";
-import { repo } from "../models/repo";
+import { createFeatureSelector } from '@ngrx/store';
+import { project } from '../models/project';
 
 export const featureKey = 'repos';
 
-export interface Repos {
-    repos: repo[]
+export interface Projects {
+  projects: project[];
 }
 
-export const selectRepos = createFeatureSelector<Repos>(featureKey);
+export const selectProjects = createFeatureSelector<Projects>(featureKey);

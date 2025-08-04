@@ -1,20 +1,20 @@
-import { createReducer, on } from "@ngrx/store"
-import  *  as ProjectsActions from "./projects.actions"
-import { repo } from "../models/repo"
+import { createReducer, on } from '@ngrx/store';
+import * as ProjectsActions from './projects.actions';
+import { project } from '../models/project';
 
 export interface State {
-    repos: repo[]
+  projects: project[];
 }
 
 export const initialState: State = {
-    repos: []
-}
+  projects: [],
+};
 
 export const projectsReducer = createReducer(
-    initialState,
-    on(ProjectsActions.GetRepos, state => ({ ...state })),
-    on(ProjectsActions.GetReposSuccess, (state, { repos }) => ({
-        repos: repos
-    })),
-    on(ProjectsActions.GetReposFailure, state => ({repos: []}))
-)
+  initialState,
+  on(ProjectsActions.GetProjects, (state) => ({ ...state })),
+  on(ProjectsActions.GetProjectsSuccess, (state, { projects }) => ({
+    projects: projects,
+  })),
+  on(ProjectsActions.GetProjectsFailure, (state) => ({ projects: [] }))
+);

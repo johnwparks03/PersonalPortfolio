@@ -1,6 +1,11 @@
-import { createAction, props } from "@ngrx/store";
-import { repo } from "../models/repo"
+import { createAction, props } from '@ngrx/store';
+import { project } from '../models/project';
 
-export const GetRepos = createAction('[Projects] Get Repos')
-export const GetReposSuccess = createAction('[Projects] Get Repos Success', props<{ repos: repo[] }>())
-export const GetReposFailure = createAction('[Projects] Get Repos Failure');
+export const GetProjects = createAction('[Projects] Get Repos');
+export const GetProjectsSuccess = createAction(
+  '[Projects] Get Projects Success',
+  props<{ projects: project[] }>()
+);
+export const GetProjectsFailure = createAction(
+  '[Projects] Get Projects Failure'
+);
