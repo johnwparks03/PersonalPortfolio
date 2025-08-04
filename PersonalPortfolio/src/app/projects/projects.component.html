@@ -1,4 +1,4 @@
-<div class="projects">
+<!-- <div class="projects">
     <h1 class="header"><u>Projects</u></h1>
     <div class="project" [class.last-repo]="last" *ngFor="let repo of repos; let last=last">
         <h3 class="repo-name">{{repo.name}}</h3>
@@ -6,4 +6,36 @@
         <a class="github-link" href="{{repo.html_url}}" target="_blank">View Project On Github</a>
         <div class="bottom-border-space"></div>
     </div>
-</div>
+</div> 
+OLD CODE
+-->
+
+<h1 class="header"><u>Projects</u></h1>
+<section class="projects-container">
+  <div class="project-row" *ngFor="let project_row of projects">
+    <div class="project-card-wrapper" *ngFor="let project of project_row">
+      <div class="project-card">
+        <div class="card-front-wrapper">
+          <div class="card-front">
+            <img
+              class="project-image"
+              src="{{ project.img_file_path }}"
+              alt="{{ project.name }}"
+            />
+            <div class="project-name">{{ project.name }}</div>
+            <p class="hover-info">(Hover to see more info)</p>
+          </div>
+        </div>
+        <div class="card-back-wrapper">
+          <div class="card-back">
+            <p class="project-description">{{ project.description }}</p>
+            <a class="github-link" href="{{ project.html_url }}" target="_blank"
+              >Click to View Project On Github</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="more-coming-soon">More Coming Soon</div>

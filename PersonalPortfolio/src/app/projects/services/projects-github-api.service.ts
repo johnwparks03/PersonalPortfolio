@@ -1,17 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { repo } from '../models/repo';
+import { project } from '../models/project';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsGithubApiService {
-
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) {}
 
   getRepos() {
-    return this.http.get<repo[]>("https://api.github.com/users/johnwparks03/repos")
+    return this.http.get<project[]>(
+      'https://api.github.com/users/johnwparks03/repos'
+    );
   }
 }
