@@ -52,6 +52,14 @@ export class ProjectsEffects {
       'An intelligent solver for the classic 8-puzzle sliding tile game that finds the optimal solution path using A* search with a misplaced tiles heuristic. The implementation uses a priority queue to explore the state space and guarantees finding the shortest sequence of moves to reach the goal state. Features custom node representation, path reconstruction, and step-by-step solution visualization. Built with Python using heap-based priority queues for optimal search performance.';
     let handwritten_digit_recognition_desc =
       'A custom-built neural network from scratch that recognizes handwritten digits (0-9) using the MNIST dataset. The implementation features a 3-layer feedforward network with sigmoid activation, backpropagation training, and interactive digit prediction. Trained on 60,000 handwritten digit samples with real-time accuracy tracking across multiple epochs. Built with Python using NumPy for matrix operations and Matplotlib for visualization, demonstrating core machine learning concepts without high-level frameworks like TensorFlow.';
+    let sudoku_solver_desc =
+      'A PyQt5 desktop application that solves Sudoku puzzles using constraint propagation and backtracking algorithms. Supports standard Sudoku plus variants including Kropki dots (consecutive/ratio relationships) and Killer cages (sum constraints). Features include an intuitive GUI for puzzle creation, visual constraint editing, step-by-step solving visualization, and the ability to load predefined puzzles. The extensible object-oriented architecture makes adding new constraint types straightforward. Showcases algorithm implementation, GUI development, and clean software design.';
+    let ai_healthcare_bot_desc =
+      'This project was a group project for my Deep Learning. My team and I developed an AI-powered healthcare assistant by fine-tuning the MedAlpaca language model to classify diseases based on patient symptoms. We trained the model on a curated symptom-disease dataset and evaluated its performance on 3,000 test samples, achieving a remarkable 6.6x improvement in accuracy—from 7.8% with the base model to 51.4% after fine-tuning. To make the model accessible, I designed and implemented a web-based user interface using Angular, TypeScript, HTML, and CSS, allowing users to input their symptoms and receive real-time disease predictions. We deployed the fine-tuned model on AWS to ensure reliable, scalable access. This project showcased the practical application of large language models in healthcare and demonstrated my skills in machine learning, cloud deployment, and full-stack web development.';
+    let file_genie_desc =
+      'I am currently working on building a automatic file organizer that intelligently sorts files into folders using customizable heuristics and rules.';
+    let senior_design_desc =
+      'For my senior design project I am conducting research with Dr. Boyang Wang to develop a tool that automatically detects hardware vulnerabilities in RTL code.';
 
     const projectDescriptions: ProjectDescriptionDictionary = {
       'scikit-learn': scikit_desc,
@@ -59,6 +67,10 @@ export class ProjectsEffects {
       'CS4033-AI-Principles-Project-1': cs4033_project_1_desc,
       eightPuzzleProblem: eight_puzzle_problem_desc,
       'handwritten-digit-recognition': handwritten_digit_recognition_desc,
+      Sudoku_Solver: sudoku_solver_desc,
+      ai_healthcare_bot: ai_healthcare_bot_desc,
+      file_genie: file_genie_desc,
+      SeniorDesign: senior_design_desc,
     };
 
     const projectImages: ProjectImageDictionary = {
@@ -71,6 +83,10 @@ export class ProjectsEffects {
       'handwritten-digit-recognition':
         'assets/project_images/handwritten-digit-recognition.png',
       PersonalPortfolio: 'assets/project_images/personal-portfolio.png',
+      Sudoku_Solver: 'assets/project_images/sudoku_solver.png',
+      file_genie: 'assets/project_images/under-construction.jpg',
+      ai_healthcare_bot:
+        'assets/project_images/deep_learning_project_poster.png',
     };
 
     data.forEach((project) => {
