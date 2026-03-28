@@ -80,7 +80,6 @@
 
 .timeline-item.active {
   transform: scale(1.2);
-
 }
 
 .timeline-item.right {
@@ -151,25 +150,119 @@ img {
   object-fit: cover;
 }
 
+/* Reduce column widths at mid-range widths to give date marker more center space */
+@media (max-width: 1200px) {
+  .timeline-job,
+  .timeline-image {
+    width: 28%;
+    margin: 0 16px;
+  }
+}
+
 /* Responsive for mobile */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .timeline {
     padding: 0;
+    width: 95%;
   }
+
+  .timeline::before {
+    display: none;
+  }
+
   .timeline-item,
   .timeline-item.left,
   .timeline-item.right {
     flex-direction: column !important;
     align-items: center;
   }
+
+  /* Red line separator at top of each stacked item */
+  .timeline-item::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background: #e31837;
+    margin: 0 auto 8px;
+    order: -2;
+  }
+
+  .timeline-item.active {
+    transform: scale(1.05);
+  }
+
+  /* Logo image floats to top (after red line) */
+  .timeline-image {
+    order: -1;
+    justify-content: center !important;
+  }
+
   .timeline-job,
   .timeline-image {
     width: 90%;
     margin: 12px 0;
+    text-align: left;
   }
-  .timeline-marker {
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
+
+  /* Date marker is now inside .timeline-job — just remove absolute positioning */
+  .timeline-date-marker {
+    position: static;
+    transform: none;
+    text-align: left;
+    padding: 4px 0;
+    font-size: 0.95em;
+    white-space: normal;
+    background: transparent;
+  }
+
+  .job-title {
+    font-size: 1.4em;
+  }
+
+  .job-description {
+    margin: 1em auto;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  .pdfLink {
+    font-size: large;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    width: 98%;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+  }
+
+  .job-company {
+    font-size: 0.95em;
+  }
+
+  .pdfLink {
+    font-size: 14px;
+    padding: 12px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-title {
+    font-size: 1.1em;
+  }
+
+  .timeline-date-marker {
+    font-size: 0.85em;
+  }
+
+  img {
+    width: 75%;
   }
 }

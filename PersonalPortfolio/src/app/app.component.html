@@ -1,14 +1,34 @@
 <body>
-  <div class="dropdown">
-    <button class="dropdown-button" type="button">
-      <mat-icon>density_medium</mat-icon>
-    </button>
-    <div class="dropdown-content">
-      <button type="button" routerLink="/about-me">About Me</button>
-      <button type="button" routerLink="/work-experience">Work Experience</button>
-      <button type="button" routerLink="/projects">Projects</button>
-      <button type="button" routerLink="/university-honors">University Honors</button>
+  <header class="nav-header">
+    <div class="dropdown" [class.open]="isOpen">
+      <button class="dropdown-button" type="button" (click)="toggleDropdown()">
+        <mat-icon>density_medium</mat-icon>
+      </button>
+      <div class="dropdown-content">
+        <button type="button" routerLink="/about-me" (click)="closeDropdown()">
+          About Me
+        </button>
+        <button
+          type="button"
+          routerLink="/work-experience"
+          (click)="closeDropdown()"
+        >
+          Work Experience
+        </button>
+        <button type="button" routerLink="/projects" (click)="closeDropdown()">
+          Projects
+        </button>
+        <button
+          type="button"
+          routerLink="/university-honors"
+          (click)="closeDropdown()"
+        >
+          University Honors
+        </button>
+      </div>
     </div>
+  </header>
+  <div class="main-content">
+    <router-outlet></router-outlet>
   </div>
-  <router-outlet></router-outlet>
 </body>

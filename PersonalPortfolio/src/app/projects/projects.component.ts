@@ -10,27 +10,16 @@ import { project } from './models/project';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-  projects: project[][] = [];
-  project_row: project[] = [];
+  projects: project[] = [];
 
   constructor(private store: Store) {}
 
   ngOnInit() {
     const projectsStore = this.store.select(ProjectSelectors.selectProjects);
-    projectsStore.subscribe((project) => {
-      project.projects.forEach((project) => {
-        if (project.name.toLowerCase() != 'johnwparks03') {
-          this.project_row.push(project);
-          if (this.project_row.length === 3) {
-            this.projects.push(this.project_row);
-            this.project_row = [];
-          }
-        }
-      });
-      if (this.project_row.length > 0) {
-        this.projects.push(this.project_row); // Push any remaining projects
-        this.project_row = []; // Reset for next batch
-      }
+    projectsStore.subscribe((projectsState) => {
+      this.projects = projectsState.projects.filter(
+        (project) => project.name.toLowerCase() != 'johnwparks03'
+      );
     });
   }
 }

@@ -3,12 +3,25 @@ body {
   background: #262525;
 }
 
-.dropdown {
+.nav-header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 16px 6px;
+  width: 100%;
+  background: #262525;
+  border-bottom: 1px solid #3a3a3a;
   z-index: 1000;
+  box-sizing: border-box;
+}
+
+.main-content {
+  padding-top: 64px;
+}
+
+.dropdown {
+  padding: 8px 6px;
+  z-index: 1000;
+  display: inline-block;
 }
 
 .dropdown-button {
@@ -44,16 +57,62 @@ body {
   cursor: pointer;
   border: none;
   font-size: large;
+  width: auto;
 }
 
 .dropdown-content button:hover {
   font-weight: bolder;
 }
 
-.dropdown:hover .dropdown-content {
+/* Hover only activates on true pointer devices (desktop), not touch screens */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover {
+    background-color: #262525;
+  }
+
+  .nav-header:has(.dropdown:hover) {
+    background-color: red;
+    width: auto;
+    border-bottom: none;
+  }
+}
+
+/* Click-toggled open state works on all devices */
+.dropdown.open .dropdown-content {
   display: block;
 }
 
-.dropdown:hover {
+.dropdown.open {
   background-color: #262525;
+}
+
+@media (max-width: 768px) {
+  .dropdown-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .dropdown-content button {
+    padding: 14px 16px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-button {
+    align-self: flex-start;
+  }
+
+  .dropdown-content {
+    justify-items: center;
+    align-self: center;
+  }
 }
