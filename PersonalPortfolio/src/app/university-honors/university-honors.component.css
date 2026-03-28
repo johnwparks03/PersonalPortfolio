@@ -13,9 +13,8 @@
 
 .section {
   width: 100%;
-  padding-bottom: 1%
+  padding-bottom: 1%;
 }
-
 
 .seminars {
   display: flex;
@@ -31,24 +30,60 @@
   font-size: larger;
 }
 
-.seminar:hover{
+.seminar:hover {
   font-weight: bolder;
 }
 
 .years-in-review {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
 }
 
 .year-in-review {
-
 }
 
 .year {
-
 }
 
 .review {
+}
 
+@media (max-width: 768px) {
+  .seminars {
+    flex-direction: column;
+    margin: 0 8%;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .seminar {
+    width: auto;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    text-align: center;
+  }
+
+  .seminar:last-child {
+    margin-bottom: 8px;
+  }
+
+  .years-in-review {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seminars {
+    margin: 0 4%;
+  }
+
+  .years-in-review {
+    margin: 0 3%;
+  }
+
+  .seminar {
+    font-size: 1rem;
+  }
 }
